@@ -1,0 +1,1 @@
+C:\Users\antho\Documents\Visual Studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp.UWP\WeatherApp.UWP.csproj;x86

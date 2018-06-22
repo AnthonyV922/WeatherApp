@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="WeatherApp.ForecastPage"
+             Title="Forecast API">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="#404040" />
+            </Style>
+            <Style x:Key="fieldStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="Margin" Value="10,0,0,0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Grid BackgroundColor="#545454" Padding="5, 5, 5, 5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Search by Zip Code, City, or Coordinates" 
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+                   HorizontalOptions="Center"
+                   TextColor="White" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label x:Name="zipCodeLabel" Text="Zip Code or City:" 
+                   Grid.Row="1" Grid.Column="0"
+                   VerticalOptions="Center"
+                   Style="{StaticResource labelStyle}"
+                   TextColor="#C0C0C0" />
+
+            <Entry x:Name="ZipOrCity"
+                   Grid.Row="1" Grid.Column="1"
+                   VerticalOptions="Center"
+                   Margin="5,0"
+                   BackgroundColor="Black"
+                   TextColor="White" />
+
+
+            <Button x:Name="GetWeatherButton" Text="Get Weather" 
+                    Grid.Row="1" Grid.Column="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderWidth="1"
+                    BorderColor="White"
+                    BackgroundColor="DarkGray"
+                    TextColor="White"
+                    FontSize="Micro"
+                    Clicked="GetForecastButton_Clicked" />
+            <Entry x:Name="LatitudeEntry"
+                   Grid.Row="2" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="1"
+                   VerticalOptions="Center"
+                   Margin="3,0"
+                   BackgroundColor="Gray"
+                   TextColor="Black"
+                   FontSize="Small"
+                   Placeholder="Latitude"/>
+            <Entry x:Name="LongitudeEntry"
+                   Grid.Row="2" Grid.RowSpan="2" Grid.Column="1"
+                   VerticalOptions="Center"
+                   Margin="3,0"
+                   BackgroundColor="Gray"
+                   TextColor="Black"
+                   FontSize="Small"
+                   Placeholder="Longitude"/>
+            <Button x:Name="CoordinateButton" Text="Coordinate" 
+                    Grid.Row="2" Grid.RowSpan="2" Grid.Column="2"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="End"
+                    BorderWidth="1"
+                    BorderColor="White"
+                    BackgroundColor="DarkGray"
+                    TextColor="White"
+                    Clicked="CoordinateButton_Clicked" />
+
+            <Label Text="5 DAY FORECAST" 
+                   Grid.Row="4" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3"
+                   HorizontalOptions="Center"
+                   TextColor="White" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Text="" 
+                   Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3"
+                   HorizontalOptions="Center"
+                   TextColor="White" FontAttributes="Bold" FontSize="Medium" />
+
+        </Grid>
+        
+        <Label Text="Location" Style="{StaticResource labelStyle}" />
+        <Label Text="{Binding Location}" Style="{StaticResource fieldStyle}" />
+        
+
+        <ListView x:Name="ListViewItem" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal" Padding="15,10" HorizontalOptions="FillAndExpand">
+
+                                <Label HorizontalOptions="Start"
+                                           VerticalTextAlignment="Start"
+                                           Text="{Binding Time}"/>
+                                <Label HorizontalOptions="CenterAndExpand"
+                                           VerticalTextAlignment="Center"
+                                           Text="{Binding Description}"/>
+                                <Label HorizontalOptions="EndAndExpand"
+                                           VerticalTextAlignment="End"
+                                           Text="{Binding Temperature}"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>  

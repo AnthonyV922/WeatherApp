@@ -1,0 +1,14 @@
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.csproj.CoreCompileInputs.cache
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.AssemblyInfoInputs.cache
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.AssemblyInfo.cs
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.deps.json
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.dll
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.pdb
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\Views\App.xaml.g.cs
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\Views\WeatherPage.xaml.g.cs
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\XamlC.stamp
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.dll
+c:\users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.pdb
+C:\Users\antho\documents\visual studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\Views\ForecastPage.xaml.g.cs
+C:\Users\antho\Documents\Visual Studio 2017\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.csprojAssemblyReference.cache
